@@ -1,26 +1,17 @@
 import { animate, stagger, inView, glide } from "motion";
 
-const cards = document.querySelectorAll("article");
-
-// animate(
-//   cards,
-//   { y: [50, 0], opacity: [0, 1] },
-
-//   {
-//     delay: stagger(0.3),
-//     duration: 1,
-//     easing: [0.22, 0.03, 0.26, 1],
-//   },
-// );
+const cards = document.querySelectorAll(".grid");
 
 inView(cards, ({ target }) => {
   animate(
-    target,
-    { opacity: ["0", "1"], transform: ["translateX(-100px)", "none"] },
+    target.getElementsByTagName("article"),
+    { opacity: ["0", "1"], 
+      transform: ["translateX(100%)", "none"] 
+    },
     {
-      delay: 1,
+      delay: stagger(0.1),
       duration: 0.5,
-      easing: glide()
+      easing: glide(),
     },
   );
 });
