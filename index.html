@@ -4,10 +4,167 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="/pico.min.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <body data-theme="dark">
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body>
+    <header id="main-header" class="container-fluid">
+      <nav class="container">
+        <ul>
+          <li>
+            <details class="dropdown">
+              <summary role="button" class="secondary">Theme</summary>
+              <ul>
+                <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                <li><a href="#" data-theme-switcher="light">Light</a></li>
+                <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Hauptüberschrift (h1)</h1>
+      <div class="grid">
+        <div>
+          <article>
+            <h2>Article</h2>
+            <p>
+              Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor
+              non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a
+              elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+              pharetra rutrum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+              voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae
+              quod provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi,
+              libero. Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae
+              nihil laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+              aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+              voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+            </p>
+          </article>
+        </div>
+        <div>
+          <article>
+            <h2>Article</h2>
+            <p>
+              Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor
+              non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a
+              elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+              pharetra rutrum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+              voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae
+              quod provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi,
+              libero. Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae
+              nihil laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+              aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+              voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <article>
+            <h2>Article</h2>
+            <p>
+              Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor
+              non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a
+              elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+              pharetra rutrum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+              voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae
+              quod provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi,
+              libero. Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae
+              nihil laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+              aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+              voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+            </p>
+          </article>
+        </div>
+        <div>
+          <article>
+            <h2>Article</h2>
+            <p>
+              Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor
+              non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a
+              elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+              pharetra rutrum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+              voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae
+              quod provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi,
+              libero. Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae
+              nihil laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+              aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+              voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <article>
+            <h2>Article</h2>
+            <p>
+              Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor
+              non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a
+              elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+              pharetra rutrum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+              voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae
+              quod provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi,
+              libero. Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae
+              nihil laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+              aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+              voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+            </p>
+          </article>
+        </div>
+        <div>
+          <article>
+            <h2>Article</h2>
+            <p>
+              Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor
+              non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a
+              elit pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+              pharetra rutrum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+              voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae
+              quod provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi,
+              libero. Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae
+              nihil laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+              aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+              voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer class="container">...</footer>
+    <script type="module" src="/minimal-theme-switcher.js"></script>
+    <script type="module" src="/motion.js"></script>
   </body>
 </html>
