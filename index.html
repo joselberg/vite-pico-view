@@ -148,9 +148,92 @@
           </p>
         </article>
       </div>
+      <div class="grid">
+        <article>
+          <h2>Article</h2>
+          <p>
+            Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non
+            ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit
+            pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+            pharetra rutrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+            voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae quod
+            provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi, libero.
+            Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae nihil
+            laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+            aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+            voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+          </p>
+        </article>
+        <article>
+          <h2>Article</h2>
+          <p>
+            Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non
+            ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit
+            pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+            pharetra rutrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+            voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae quod
+            provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi, libero.
+            Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae nihil
+            laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+            aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+            voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+          </p>
+        </article>
+        <article>
+          <h2>Article</h2>
+          <p>
+            Nullam dui arcu, malesuada et sodales eu, efficitur vitae dolor. Sed ultricies dolor non
+            ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit
+            pharetra egestas. Nunc placerat facilisis cursus. Sed vestibulum metus eget dolor
+            pharetra rutrum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum quis itaque
+            voluptatum sed error assumenda aliquam minima officiis accusantium accusamus vitae quod
+            provident, quas nulla dolore ut, quidem, expedita voluptatem saepe? Sequi, libero.
+            Debitis iusto, aut temporibus hic quo voluptatibus officia doloremque beatae nihil
+            laudantium blanditiis quibusdam est, possimus maiores vero. Voluptatibus aliquam
+            aspernatur adipisci blanditiis quisquam accusamus quam similique quae suscipit
+            voluptatem maiores incidunt amet commodi, sint cupiditate odio.
+          </p>
+        </article>
+      </div>
     </main>
+    <div class="overlay">
+      <canvas
+        id="canvas"
+        width="1100"
+        height="160
+      "
+      ></canvas>
+    </div>
     <footer class="container">...</footer>
     <script type="module" src="/minimal-theme-switcher.js"></script>
     <script type="module" src="/motion.js"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.20.0"></script>
+    <script>
+      const overlay = document.querySelector(".overlay");
+      const r = new rive.Rive({
+        src: "ipro-logo-ani-in.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        stateMachines: "Logoanimation",
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+        },
+      });
+      setTimeout(() => {
+        overlay.style.opacity = "0";
+      }, "3500");
+      setTimeout(() => {
+        overlay.remove();
+      }, "3900");
+    </script>
   </body>
 </html>
