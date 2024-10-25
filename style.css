@@ -43,3 +43,7 @@ section {
   justify-content: center;
   transition: opacity 0.9s ease;
 }
+
+#canvas {
+  max-width: 75vw;
+}
