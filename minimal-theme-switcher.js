@@ -13,6 +13,7 @@ const themeSwitcher = {
   buttonAttribute: "data-theme-switcher",
   rootAttribute: "data-theme",
   localStorageKey: "picoPreferredColorScheme",
+  overlayTarget: ".overlay",
 
   // Init
   init() {
