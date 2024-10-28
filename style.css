@@ -1,15 +1,15 @@
 :root {
-  --pico-font-family-sans-serif: Quicksand, Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
-    "Helvetica Neue", sans-serif, var(--pico-font-family-emoji);
+	--pico-font-family-sans-serif: Quicksand, Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
+		'Helvetica Neue', sans-serif, var(--pico-font-family-emoji);
 }
 
 body {
-  caret-color: transparent;
+	caret-color: transparent;
 }
 
 @font-face {
-  src: url("../fonts/Quicksand-VariableFont_wght.ttf");
-  font-family: "Quicksand";
+	src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+	font-family: 'Quicksand';
 }
 
 h1,
@@ -18,32 +18,32 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Quicksand";
-  font-weight: 300;
+	font-family: 'Quicksand';
+	font-weight: 300;
 }
 
 h1 {
-  --pico-font-size: 2.5rem;
+	--pico-font-size: 2.5rem;
 }
 
 section {
-  margin-bottom: 13rem;
+	margin-bottom: 13rem;
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  background-color: var(--pico-background-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.9s ease;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	background-color: var(--pico-background-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.9s ease;
 }
 
 #canvas {
-  max-width: 75vw;
+	max-width: 75vw;
 }
